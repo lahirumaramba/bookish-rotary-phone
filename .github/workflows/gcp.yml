@@ -35,7 +35,7 @@ jobs:
         with:
           token_format: 'access_token'
           workload_identity_provider: 'projects/182639555212/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
-          service_account: 'admin-sdk-8b7ba@appspot.gserviceaccount.com'
+          service_account: 'firebase-adminsdk-kfdwe@admin-sdk-8b7ba.iam.gserviceaccount.com'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
