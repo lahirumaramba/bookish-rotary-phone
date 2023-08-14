@@ -34,7 +34,7 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           token_format: 'access_token'
-          workload_identity_provider: 'projects/182639555212/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
+          workload_identity_provider: 'projects/182639555212/locations/global/workloadIdentityPools/github-actions-pool2/providers/github-actions-provider2'
           service_account: 'firebase-adminsdk-kfdwe@admin-sdk-8b7ba.iam.gserviceaccount.com'
 
       # Runs a single command using the runners shell
