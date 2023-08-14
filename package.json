@@ -1,0 +1,24 @@
+{
+  "name": "bookish-rotary-phone",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahirumaramba/bookish-rotary-phone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lahirumaramba/bookish-rotary-phone/issues"
+  },
+  "homepage": "https://github.com/lahirumaramba/bookish-rotary-phone#readme",
+  "dependencies": {
+    "google-auth-library": "^9.0.0"
+  }
+}
