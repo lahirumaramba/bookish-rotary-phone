@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/lahirumaramba/bookish-rotary-phone#readme",
   "dependencies": {
-    "firebase-admin": "^11.10.1",
-    "google-auth-library": "^9.0.0"
+    "firebase-admin": "file:firebase-admin-12.0.0.tgz"
   }
 }
