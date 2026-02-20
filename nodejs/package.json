@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/lahirumaramba/bookish-rotary-phone.git"
   },
-  "license": "ISC",
+  "license": "Apache-2.0",
   "author": "",
   "type": "module",
   "main": "index.js",
