@@ -1,0 +1,39 @@
+name: Firebase Integration Test for .NET
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'dotnet/**'
+  workflow_dispatch:
+
+jobs:
+  integration-test-dotnet:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    defaults:
+      run:
+        working-directory: dotnet/FirebaseAdminTest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: '${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}'
+          service_account: '${{ secrets.SERVICE_ACCOUNT }}'
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Execute tests
+        run: dotnet test --no-restore --verbosity normal
