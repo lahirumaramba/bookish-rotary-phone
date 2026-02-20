@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
+    <Description>Demonstrates initializing Firebase Admin SDKs using Workload Identity Federation across Node.js, Java, Python, Go, and .NET</Description>
   </PropertyGroup>
 
   <ItemGroup>

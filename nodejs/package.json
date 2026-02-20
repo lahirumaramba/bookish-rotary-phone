@@ -1,7 +1,7 @@
 {
   "name": "bookish-rotary-phone",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstrates initializing Firebase Admin SDKs using Workload Identity Federation across Node.js, Java, Python, Go, and .NET",
   "keywords": [],
   "homepage": "https://github.com/lahirumaramba/bookish-rotary-phone#readme",
   "bugs": {
