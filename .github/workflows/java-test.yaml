@@ -2,6 +2,8 @@ name: Firebase Integration Test for Java
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'java/**'
   workflow_dispatch:
 
 jobs:
