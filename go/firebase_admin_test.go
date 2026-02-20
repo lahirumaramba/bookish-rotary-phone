@@ -14,7 +14,10 @@ var app *firebase.App
 func Test1InitializeApp(t *testing.T) {
 	ctx := context.Background()
 
-	config := &firebase.Config{}
+	config := &firebase.Config{
+		ProjectID:        "admin-sdk-wif",
+		ServiceAccountID: "firebase-adminsdk-fbsvc@admin-sdk-wif.iam.gserviceaccount.com",
+	}
 
 	var err error
 	app, err = firebase.NewApp(ctx, config)

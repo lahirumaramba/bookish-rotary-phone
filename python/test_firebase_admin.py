@@ -5,7 +5,10 @@ from firebase_admin import credentials, initialize_app, auth, firestore
 def app():
     # Use ADC
     cred = credentials.ApplicationDefault()
-    return initialize_app(cred)
+    return initialize_app(cred, {
+        'projectId': 'admin-sdk-wif',
+        'serviceAccountId': 'firebase-adminsdk-fbsvc@admin-sdk-wif.iam.gserviceaccount.com'
+    })
 
 def test_initialize_app(app):
     assert app is not None
