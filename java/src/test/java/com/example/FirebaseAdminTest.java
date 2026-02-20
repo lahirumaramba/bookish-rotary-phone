@@ -62,7 +62,7 @@ public class FirebaseAdminTest {
     }
 
     @Test
-    public void test3FirestoreReadWrite() throws Exception {
+    public void test3FirestoreRead() throws Exception {
         Firestore db = FirestoreClient.getFirestore(app);
         assertNotNull(db);
 

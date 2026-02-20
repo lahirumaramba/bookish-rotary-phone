@@ -133,3 +133,6 @@ buildsetup.sh
 
 # Java build output
 java/target/
+
+# VSCode
+.vscode

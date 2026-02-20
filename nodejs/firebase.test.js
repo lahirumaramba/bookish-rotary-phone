@@ -30,7 +30,7 @@ describe('Firebase Admin Node.js SDK WIF Demo', () => {
         }
     });
 
-    it('3. should test Firestore (simple write/read)', async () => {
+    it('3. should test Firestore (simple read)', async () => {
         const db = getFirestore(app);
         expect(db).toBeDefined();
 
