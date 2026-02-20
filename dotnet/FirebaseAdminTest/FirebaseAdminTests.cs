@@ -42,7 +42,7 @@ namespace FirebaseAdminTest
 
             try
             {
-                var pagedEnumerable = auth.ListUsersAsync(new ListUsersOptions { MaxResults = 1 });
+                var pagedEnumerable = auth.ListUsersAsync(new ListUsersOptions { PageSize = 1 });
                 var enumerator = pagedEnumerable.GetAsyncEnumerator();
                 bool hasNext = await enumerator.MoveNextAsync();
 
