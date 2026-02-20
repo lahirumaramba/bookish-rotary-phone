@@ -1,6 +1,8 @@
 package com.example;
 
+import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.ListUsersPage;
 import com.google.firebase.cloud.FirestoreClient;
@@ -8,6 +10,8 @@ import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.DocumentSnapshot;
 import com.google.cloud.firestore.Firestore;
 import org.junit.jupiter.api.*;
+
+import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,7 +24,14 @@ public class FirebaseAdminTest {
     public static void setup() {
         // Initialize the app via ADC
         if (FirebaseApp.getApps().isEmpty()) {
-            app = FirebaseApp.initializeApp();
+            try {
+                FirebaseOptions options = FirebaseOptions.builder()
+                        .setCredentials(GoogleCredentials.getApplicationDefault())
+                        .build();
+                app = FirebaseApp.initializeApp(options);
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to initialize FirebaseApp with ADC credentials", e);
+            }
         } else {
             app = FirebaseApp.getInstance();
         }

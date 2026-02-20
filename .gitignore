@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 buildsetup.sh
+
+# Java build output
+java/target/
