@@ -1,0 +1,27 @@
+{
+  "name": "bookish-rotary-phone",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/lahirumaramba/bookish-rotary-phone#readme",
+  "bugs": {
+    "url": "https://github.com/lahirumaramba/bookish-rotary-phone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahirumaramba/bookish-rotary-phone.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.6.1"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}
