@@ -41,9 +41,6 @@ describe('Firebase Admin Node.js SDK WIF Demo', () => {
                 message: 'Hello from GitHub Actions WIF!'
             };
 
-            await docRef.set(testData);
-            console.log('Firestore write successful.');
-
             const doc = await docRef.get();
             expect(doc.exists).toBe(true);
             expect(doc.data()).toBeDefined();
