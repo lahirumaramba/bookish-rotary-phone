@@ -2,6 +2,8 @@ name: Firebase Integration Test for Node.js
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'nodejs/**'
   workflow_dispatch:
 
 jobs:
