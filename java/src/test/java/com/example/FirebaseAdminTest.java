@@ -27,6 +27,8 @@ public class FirebaseAdminTest {
             try {
                 FirebaseOptions options = FirebaseOptions.builder()
                         .setCredentials(GoogleCredentials.getApplicationDefault())
+                        .setServiceAccountId("firebase-adminsdk-fbsvc@admin-sdk-wif.iam.gserviceaccount.com")
+                        .setProjectId("admin-sdk-wif")
                         .build();
                 app = FirebaseApp.initializeApp(options);
             } catch (IOException e) {
