@@ -1,0 +1,39 @@
+name: Firebase Integration Test for Dart
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'dart/**'
+  workflow_dispatch:
+
+jobs:
+  integration-test-dart:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write' # Required for requesting the JWT from GitHub
+
+    defaults:
+      run:
+        working-directory: dart
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          # Use the values generated during your WIF setup
+          workload_identity_provider: '${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}'
+          service_account: '${{ secrets.SERVICE_ACCOUNT }}'
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 'stable'
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Execute Dart Tests
+        run: dart test
