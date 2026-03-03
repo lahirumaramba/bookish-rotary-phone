@@ -177,13 +177,13 @@
     },
     {
       "name": "googleapis",
-      "rootUri": "file:///Users/lahirumaramba/.pub-cache/hosted/pub.dev/googleapis-15.0.0",
+      "rootUri": "file:///Users/lahirumaramba/.pub-cache/git/googleapis.dart-47dbff46d57bd781d15749bd5b9e6253af6921ea/generated/googleapis",
       "packageUri": "lib/",
-      "languageVersion": "3.7"
+      "languageVersion": "3.9"
     },
     {
       "name": "googleapis_auth",
-      "rootUri": "file:///Users/lahirumaramba/.pub-cache/hosted/pub.dev/googleapis_auth-2.1.0",
+      "rootUri": "file:///Users/lahirumaramba/.pub-cache/git/googleapis.dart-47dbff46d57bd781d15749bd5b9e6253af6921ea/googleapis_auth",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },

@@ -27,3 +27,13 @@ dependency_overrides:
       url: https://github.com/invertase/dart_firebase_admin.git
       ref: next
       path: packages/googleapis_storage
+  googleapis:
+    git:
+      url: https://github.com/google/googleapis.dart.git
+      ref: master
+      path: generated/googleapis
+  googleapis_auth:
+    git:
+      url: https://github.com/google/googleapis.dart.git
+      ref: master
+      path: googleapis_auth

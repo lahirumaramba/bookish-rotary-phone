@@ -236,21 +236,23 @@ packages:
     source: hosted
     version: "0.3.3+1"
   googleapis:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: googleapis
-      sha256: "692fb9e90c321b61a7a2123de0353ec8a20691cd979db2553d8d732f710f6535"
-      url: "https://pub.dev"
-    source: hosted
-    version: "15.0.0"
+      path: "generated/googleapis"
+      ref: master
+      resolved-ref: "47dbff46d57bd781d15749bd5b9e6253af6921ea"
+      url: "https://github.com/google/googleapis.dart.git"
+    source: git
+    version: "16.0.0"
   googleapis_auth:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: googleapis_auth
-      sha256: "3d84a0c47f98cc9bc59a6b8fc0ffd82c0fc803ead3971e4a2af943bd166953ae"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.0"
+      path: googleapis_auth
+      ref: master
+      resolved-ref: "47dbff46d57bd781d15749bd5b9e6253af6921ea"
+      url: "https://github.com/google/googleapis.dart.git"
+    source: git
+    version: "2.2.0-wip"
   googleapis_beta:
     dependency: transitive
     description:
