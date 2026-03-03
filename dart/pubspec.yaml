@@ -29,11 +29,11 @@ dependency_overrides:
       path: packages/googleapis_storage
   googleapis:
     git:
-      url: https://github.com/google/googleapis.dart.git
-      ref: master
+      url: https://github.com/lahirumaramba/googleapis.dart.git
+      ref: lm-fix-wif
       path: generated/googleapis
   googleapis_auth:
     git:
-      url: https://github.com/google/googleapis.dart.git
-      ref: master
+      url: https://github.com/lahirumaramba/googleapis.dart.git
+      ref: lm-fix-wif
       path: googleapis_auth

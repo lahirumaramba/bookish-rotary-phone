@@ -239,18 +239,18 @@ packages:
     dependency: "direct overridden"
     description:
       path: "generated/googleapis"
-      ref: master
-      resolved-ref: "47dbff46d57bd781d15749bd5b9e6253af6921ea"
-      url: "https://github.com/google/googleapis.dart.git"
+      ref: lm-fix-wif
+      resolved-ref: "0c556cd51d922c2ebe346db226f904ccfdf00e7d"
+      url: "https://github.com/lahirumaramba/googleapis.dart.git"
     source: git
     version: "16.0.0"
   googleapis_auth:
     dependency: "direct overridden"
     description:
       path: googleapis_auth
-      ref: master
-      resolved-ref: "47dbff46d57bd781d15749bd5b9e6253af6921ea"
-      url: "https://github.com/google/googleapis.dart.git"
+      ref: lm-fix-wif
+      resolved-ref: "0c556cd51d922c2ebe346db226f904ccfdf00e7d"
+      url: "https://github.com/lahirumaramba/googleapis.dart.git"
     source: git
     version: "2.2.0-wip"
   googleapis_beta:
