@@ -13,8 +13,9 @@ void main() {
       app = FirebaseApp.initializeApp(
         name: 'bookish-rotary-phone-dart',
         options: AppOptions(
-          credential: Credential.fromApplicationDefaultCredentials(),
-          serviceAccountId: 'firebase-adminsdk-fbsvc@admin-sdk-wif.iam.gserviceaccount.com',
+          credential: Credential.fromApplicationDefaultCredentials(
+            serviceAccountId: 'firebase-adminsdk-fbsvc@admin-sdk-wif.iam.gserviceaccount.com'
+          ),
           projectId: 'admin-sdk-wif',
         )
       );

@@ -136,3 +136,5 @@ java/target/
 
 # VSCode
 .vscode
+
+.dart_tool
