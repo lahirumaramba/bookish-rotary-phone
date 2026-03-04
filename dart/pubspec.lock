@@ -133,9 +133,9 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/dart_firebase_admin"
-      ref: next
-      resolved-ref: c43ddd4d104b77a30e0ff45d7aec3a2859192530
-      url: "https://github.com/invertase/dart_firebase_admin.git"
+      ref: lm-auth-fix
+      resolved-ref: "3c1fba16fe51cc89915d3a3c8f3fe49167af4e47"
+      url: "https://github.com/lahirumaramba/dart_firebase_admin.git"
     source: git
     version: "0.5.0"
   dart_jsonwebtoken:
@@ -222,9 +222,9 @@ packages:
     dependency: "direct overridden"
     description:
       path: "packages/google_cloud_firestore"
-      ref: next
-      resolved-ref: c43ddd4d104b77a30e0ff45d7aec3a2859192530
-      url: "https://github.com/invertase/dart_firebase_admin.git"
+      ref: lm-auth-fix
+      resolved-ref: "3c1fba16fe51cc89915d3a3c8f3fe49167af4e47"
+      url: "https://github.com/lahirumaramba/dart_firebase_admin.git"
     source: git
     version: "0.1.0"
   google_identity_services_web:
@@ -239,8 +239,8 @@ packages:
     dependency: "direct overridden"
     description:
       path: "generated/googleapis"
-      ref: lm-fix-wif
-      resolved-ref: "0c556cd51d922c2ebe346db226f904ccfdf00e7d"
+      ref: lm-auth-fix
+      resolved-ref: "9410c8f76e7a1191a9b988623fecd1f88694cd4c"
       url: "https://github.com/lahirumaramba/googleapis.dart.git"
     source: git
     version: "16.0.0"
@@ -248,8 +248,8 @@ packages:
     dependency: "direct overridden"
     description:
       path: googleapis_auth
-      ref: lm-fix-wif
-      resolved-ref: "0c556cd51d922c2ebe346db226f904ccfdf00e7d"
+      ref: lm-auth-fix
+      resolved-ref: "9410c8f76e7a1191a9b988623fecd1f88694cd4c"
       url: "https://github.com/lahirumaramba/googleapis.dart.git"
     source: git
     version: "2.2.0-wip"
@@ -265,9 +265,9 @@ packages:
     dependency: "direct overridden"
     description:
       path: "packages/googleapis_storage"
-      ref: next
-      resolved-ref: c43ddd4d104b77a30e0ff45d7aec3a2859192530
-      url: "https://github.com/invertase/dart_firebase_admin.git"
+      ref: lm-auth-fix
+      resolved-ref: "3c1fba16fe51cc89915d3a3c8f3fe49167af4e47"
+      url: "https://github.com/lahirumaramba/dart_firebase_admin.git"
     source: git
     version: "0.1.0"
   http:
